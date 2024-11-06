@@ -1,0 +1,147 @@
+body{
+    background-color: rgb(172, 109, 253);
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+  }
+
+  header,
+  nav,
+  article,
+  aside,
+  footer {
+    border: 1px solid rgb(41, 6, 58);
+    padding: 10px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "h h"
+      "n n"
+      "a as"
+      "f f";
+  }
+
+  header {
+    grid-area: h;
+  }
+  nav {
+    grid-area: n;
+  }
+  
+  article {
+    grid-area: a;
+  }
+  
+  aside {
+    grid-area: as;
+    bu
+
+
+  }
+  
+  footer {
+    grid-area: f;
+  }
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.termek{
+    background-color: indigo;
+    color: pink;
+}
+
+  img{
+    padding: 5px;
+    width: 100%;
+    overflow: hidden;
+    
+
+  }
+
+  nav a {
+    background-color: rgb(1, 0, 2);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+
+    
+  }
+
+  button{
+    background-color: black;
+    color: blueviolet;
+    border-radius: 12px;
+    
+  }
+  footer h1{
+    text-align: center;
+    
+  }
+
+  li{
+    list-style: none;
+  }
+ aside h2{
+    padding: 3px;
+    text-align: center;
+    text-transform: uppercase ;
+  }
+  @media screen and (max-width: 750px) {
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas:
+        "h h"
+        "n n"
+        "a as"
+        "f f"
+        ;
+    }
+    article{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "h "
+          "n "
+          "a "
+          "as"
+          "f "
+          ;
+    }
+    article{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    nav ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    nav li{
+        padding: 15px;
+    }
+  }
+  *{
+    box-sizing: border-box;
+  }
+  p{
+    padding-left: 6px;
+  }
